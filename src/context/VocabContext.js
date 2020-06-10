@@ -1,6 +1,10 @@
+/**
+ * author: Denis Kravchenko
+ */
 import React, { Component } from "react";
 import axios from "axios";
 
+//Creating context
 const VocabularyContext = React.createContext();
 
 export class VocabularyContextProvider extends Component {

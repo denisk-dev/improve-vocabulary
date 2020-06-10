@@ -1,6 +1,8 @@
+/**
+ * author: Denis Kravchenko
+ */
 import React, { Component } from "react";
 import QuizButton from "./QuizButton";
-import { withRouter } from "react-router-dom";
 
 class PracticeQuiz extends Component {
   state = {
@@ -42,7 +44,6 @@ class PracticeQuiz extends Component {
           i++;
         }
       }
-      console.log(quizQuestions);
 
       return (
         <div className="card text-center">

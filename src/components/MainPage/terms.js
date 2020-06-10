@@ -1,14 +1,15 @@
+/**
+ * author: Denis Kravchenko
+ */
 import React from "react";
-import { Consumer } from "../context/VocabContext";
-import Spinner from "../Spinner/Spinner";
+import { Consumer } from "../../context/VocabContext";
+import Spinner from "../../Spinner/Spinner";
 import SingleTerm from "./SingleTerm";
 
 const Terms = () => {
   return (
     <Consumer>
       {(value) => {
-        console.log(value);
-
         if (value.state.requestSatus === false) {
           return <Spinner />;
         } else if (value.state.terms.length === 0) {

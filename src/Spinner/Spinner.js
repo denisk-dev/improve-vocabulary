@@ -1,6 +1,8 @@
-import React from 'react'
-import spinner from './spinner.gif'
-
+/**
+ * author: Denis Kravchenko
+ */
+import React from "react";
+import spinner from "./spinner.gif";
 
 export default () => {
   return (
@@ -8,13 +10,8 @@ export default () => {
       <img
         src={spinner}
         alt="Loading..."
-        style={{ width: '200px', margin: '40px auto', display: 'block' }}
+        style={{ width: "200px", margin: "40px auto", display: "block" }}
       />
     </div>
-
-  )
-
-}
-
-
-
+  );
+};
